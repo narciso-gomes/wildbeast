@@ -20,6 +20,8 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
+  border-radius: 5px;
 }
 
 .estrutura {
@@ -82,17 +84,29 @@ img {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
-  transition: .1s ease-out;
+  transition: 0.1s ease-out;
 }
 
-.sidenav li a:hover{
-    background: #b07dfb;
+.sidenav li a:hover {
+  background: #b07dfb;
 }
 
 .anuncios {
   grid-area: anuncios;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  grid-gap: 30px;
 }
 
 .footer {
   grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  padding: 30px;
 }
